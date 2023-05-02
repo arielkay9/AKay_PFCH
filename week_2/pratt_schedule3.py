@@ -159,7 +159,18 @@ schedule = {
 			}
 }
 
+wed_classes = schedule["wednesday"]
+R612 = wed_classes.get(612, [])
 
+earliest_class = None
+for class_times in R612:
+	if earliest_class is None or class_times["start"] < earliest_class["start"]:
+		earliest_class = class_times
+if earliest_class is not None:
+	class_name = earliest_class["class"]
+	prof_name = earliest_class["prof"]
+	start_time = earliest_class["start"]
+	print(f"{class_name} - {prof_name} - {start_time}")
 
 #print the name of the first class on Wednesday in room 612, with the name of the prof and when the start is.
 #please note my output formate: <class name> - <prof name> - <start time>
