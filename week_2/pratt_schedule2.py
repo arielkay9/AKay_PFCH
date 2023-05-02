@@ -5,6 +5,11 @@ schedule = {
 	"thursday": ['Information Science Research','Information Professions','Information Professions'],
 }
 
+tue_class = schedule["tuesday"]
+print(tue_class)
+
+Tue_2 = schedule["tuesday"][1]
+print(Tue_2)
 
 #print the list of classes for the 2nd day, and then print the name of the 2nd class on that day.
 
