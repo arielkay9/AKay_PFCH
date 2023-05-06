@@ -1,3 +1,7 @@
+#Use wikipedia's API to get all the data from each table into .json and .html files.
+#Use BeautifulSoup to scrape that .html file into a .csv.
+#Note: I used this same code on each table, adjusting the resulting .csv file name, the "section" param, and the "cell" number where necessary. All the resulting individual .csv files are in the folder CSVs.
+
 from urllib import response
 import pandas as pd
 import requests
@@ -5,22 +9,6 @@ import csv
 import json
 from bs4 import BeautifulSoup
 
-
-
-# url = "https://en.wikipedia.org/w/api.php"
-# subject = "List_of_female_Academy_Award_winners_and_nominees_for_non-gendered_categories"
-# params = {
-#     "action" : "parse",
-#     "page" : subject,
-#     "format" : "json",
-#     "prop" : "sections",
-#     "redirects" : ""
-# }
-
-# response = requests.get(url, params=params)
-# data = response.json()
-
-# print(json.dumps(data, indent=2))
 
 
 url = "https://en.wikipedia.org/w/api.php"
