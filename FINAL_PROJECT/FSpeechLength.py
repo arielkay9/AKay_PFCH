@@ -1,3 +1,5 @@
+#Count the number of words for each individual speech given by a female winner. Write the output in a .csv called 'FLength.csv.'
+
 import csv
 import os
 
