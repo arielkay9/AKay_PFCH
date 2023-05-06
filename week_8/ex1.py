@@ -1,13 +1,15 @@
-from bs4 import BeautifulSoup
 import requests
+from bs4 import BeautifulSoup
 
 url = 'https://www.moma.org/artists/?exhibition_id=5224&page=1'
-
 response = requests.get(url)
+
 soup = BeautifulSoup(response.content, 'html.parser')
 
-h3_element = soup.find('h3', class_='typography')
+artist_list = soup.find_all('h3', class_='typography')
 
-if h3_element is not None:
-    artist_names = h3_element.get_text(strip=True)
-    print(artist_names)
+artist_names = []
+for artist in artist_list:
+    artist_names.append(artist.text.strip())
+
+print(artist_names)
