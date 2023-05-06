@@ -1,4 +1,5 @@
-#Only female winners
+#Create a .csv file with only the female winners, but keeping all the data in the other columns the same (including speech transcript)
+
 
 import pandas as pd
 
