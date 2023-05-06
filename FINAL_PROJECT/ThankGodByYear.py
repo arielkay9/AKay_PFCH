@@ -1,4 +1,4 @@
-#Plot how winners thank God by year and gender
+#Plot how often winners thank God by year and gender
 
 import pandas as pd
 import matplotlib.pyplot as plt
