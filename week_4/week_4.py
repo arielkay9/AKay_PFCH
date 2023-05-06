@@ -1,4 +1,8 @@
 import csv
+import os
+
+if not os.path.exists('res'):
+    os.makedirs('res')
 
 with open('Artworks.csv', 'r') as artwork_file:
 
