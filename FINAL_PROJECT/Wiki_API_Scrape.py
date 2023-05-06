@@ -1,6 +1,6 @@
 #Use wikipedia's API to get all the data from each table into .json and .html files.
 #Use BeautifulSoup to scrape that .html file into a .csv.
-#Note: I used this same code on each table, adjusting the resulting .csv file name, the "section" param, and the "cell" number where necessary. All the resulting individual .csv files are in the folder CSV_Files.
+#Note: I used this same code on each table, adjusting the resulting .csv file name, the "section" param, and the "cell" number where necessary. All the resulting individual .csv files are in the folder Category_CSVs.
 
 from urllib import response
 import pandas as pd
