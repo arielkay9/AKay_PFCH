@@ -1,3 +1,5 @@
+#Count the number of male winners who use the phrase "Thank God"
+
 import csv
 
 
