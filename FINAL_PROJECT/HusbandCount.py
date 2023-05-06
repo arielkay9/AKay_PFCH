@@ -1,4 +1,4 @@
-#count husband results
+#Count the number of times female winners use the phrase "My husand."
 
 import csv
 
