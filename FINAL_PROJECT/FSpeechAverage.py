@@ -1,4 +1,4 @@
-#Group the female winners by year and average the number of words in their speeches, by year
+#Group the female winners by year and average the number of words in their speeches, by year. Output the resutls in a .csv called FSpeechAverage.csv.
 
 import csv
 import os
